@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="magic.css">
+   
+</head>
+<body>
+    <script>
+       var  N = parseInt(prompt("ENTER THE NUMBER OF DISKS"));
+       let count = 1
+       function tower( N, SOURCE_NODE,DESTINATION_NODE,AUXILLIARY_NODE){
+           if(N>= 1){
+               
+                tower(N-1, SOURCE_NODE,AUXILLIARY_NODE,DESTINATION_NODE)
+                document.write("  "+(count++)+':  '+"  "+'MOVE DISK FROM '+SOURCE_NODE+' TO '+DESTINATION_NODE)
+                document.write("<br>")
+                document.write("<br>")
+                document.write("NEXT")
+                document.write("<br>")
+                document.write("<br>")
+                tower(N-1, AUXILLIARY_NODE,DESTINATION_NODE,SOURCE_NODE)
+           }
+           return 'FINISHED:  TOTAL MOVES = '+(count-1);
+       }
+       document.write('THE MOVES ARE:')
+       document.write("<br>")
+       document.write("<br>")
+       document.write(tower(N,"SOURCE_NODE","DESTINATION_NODE","AUXILLIARY_NODE"))
+    </script>
+</body>
+</html>

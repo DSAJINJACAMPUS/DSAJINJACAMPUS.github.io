@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="magic.css">
+   
+</head>
+<body>
+    <script>
+       const stack = []
+       var num = prompt('ENTER SIZE OF STACK: ')
+       for(let i = 0;i<num;i++){
+           var n = prompt('ENTER VALUE: ')
+           stack.push(n)
+       }
+       document.write('ORIGINAL STACK ELEMENTS')
+       document.write('<br> ')
+       document.write(stack+' ')
+       alert('ELEMENTS IN STACK ARE: '+stack+' ')
+       var choice = prompt('1.POP  2.PUSH  3.RETURN SIZE  4.RETURN TOP 5.RETURN ALL ELEMENTS')
+       if(choice == 1){
+           stack.pop();
+            document.write('<br>')
+            document.write('<br>')
+            document.write('POPPED STACK')
+            document.write('<br>')
+           document.write(stack)
+           document.write('<br>')
+       }
+       else if(choice == 2){
+           var ele = prompt('ENTER ELEMENT')
+           stack.push(ele);
+            document.write('<br>')
+            document.write('<br>')
+            document.write('STACK INCLUDING PUSHED ELEMENT')
+            document.write('<br>')
+           document.write(stack)
+           document.write('<br>')
+       }
+       else if(choice == 3){
+            document.write('<br>')
+            document.write('<br>')
+            document.write('STACK SIZE')
+            document.write('<br>')
+           document.write(stack.length)
+           document.write('<br>')
+       }
+       else if(choice == 4){
+            document.write('<br>')
+            document.write('<br>')
+            document.write('TOP ELEMENT')
+            document.write('<br>')
+           document.write(stack[stack.length-1])
+           document.write('<br>')
+       }
+       else if(choice == 5){
+            document.write('<br>')
+            document.write('<br>')
+            document.write('ALL STACK ELEMENTS')
+            document.write('<br>')
+           document.write(stack)
+           document.write('<br>')
+       }
+       else{
+           alert('INVALID CHOICE')
+       }
+    </script>
+</body>
+</html>
+ 

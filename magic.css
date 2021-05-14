@@ -1,0 +1,106 @@
+body{
+    margin: 0px;
+    background-color:gray;
+    font: 1.3em sans-serif;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.content{
+    font: 1em sans-serif;
+}
+.header{
+    color: blue;
+    background-color:white;
+}
+.verify{
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+    font-size: bold 5em;
+}
+.verify > div{
+    margin-right: 20px;
+    height: 24px;
+    transition: border-bottom 0s;
+}
+.verify a{
+    color: darkblue;
+    text-decoration: none;
+    transition: color 1s;
+}
+.left_side a:hover{
+    color: red;
+    transition: 0s;
+}
+.right_side a:hover{
+    color: red;
+    transition: 0s;
+}
+.centre{
+    text-decoration: none;
+    text-align: center;
+}
+.centre a:hover{
+    color: red;
+    text-decoration: none;
+    transition: 0s;
+}
+.bottom{
+    color: darkblue;
+    display: flex;
+    justify-content:center;
+    padding-bottom: 10px;
+    background-color:  aqua;
+    text-decoration: none;
+    margin-right: 50px;
+}
+.bottom a{
+    font: 1em sans-serif;
+    transition: color 1s;
+    text-decoration: none;
+    margin-right: 50px;
+}
+.bottom a:hover{
+    color: darkorange;
+    text-decoration: none;
+    transition: 0s;
+}
+.image{
+    justify-content: space-between;
+    margin-left: 50px;
+    padding-left: 30px;
+    animation: forwards;
+    transition: background-color 1s linear;
+    border-spacing: 1em;
+}
+.image :hover{
+    background-color: transparent;
+}
+image a{
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.lecture{
+    font: bold 1em sans-serif;
+}
+.lecture a:hover{
+    color: red;
+}
+.lecture a{
+    text-align: justify;
+    text-decoration: none;
+    transition: color 0s;
+    padding-left: 60px;
+}
+.name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font: bold 40px;
+    text-align: center;
+    color:blue;
+}
+.par{
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+

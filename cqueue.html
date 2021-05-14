@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="magic.css">
+   
+</head>
+<body>
+    <script>
+        const queue = []
+       var num = prompt('ENTER SIZE OF QUEUE: ')
+       for(let i = 0;i<num;i++){
+           var n = prompt('ENTER VALUE: ')
+           queue.push(n)
+       }
+       document.write('ORIGINAL QUEUE ELEMENTS')
+       document.write('<br> ')
+       document.write(queue+' ')
+       alert('ELEMENTS IN QUEUE ARE: '+queue+' ')
+       var choice = prompt('1.DEQUEUE  2.ENQUEUE  3.RETURN SIZE  4.CHECK IF EMPTY 5.CHECK IF FULL 6.RETURN ALL ELEMENTS')
+       if(choice == 1){
+           queue.shift()
+            document.write('<br>')
+            document.write('<br>')
+            document.write('DEQUEUED QUEUE')
+            document.write('<br>')
+           document.write(queue)
+           document.write('<br>')
+       }
+       else if(choice == 2){
+           var ele = prompt('ENTER ELEMENT')
+
+           queue.push(ele);
+            document.write('<br>')
+            document.write('<br>')
+            document.write('QUEUE INCLUDING ENQUEUED ELEMENT')
+            document.write('<br>')
+           document.write(queue)
+           document.write('<br>')
+       }
+       else if(choice == 3){
+            document.write('<br>')
+            document.write('<br>')
+            document.write('QUEUE SIZE')
+            document.write('<br>')
+           document.write(queue.length)
+           document.write('<br>')
+       }
+       else if(choice == 4){
+            document.write('<br>')
+            if(queue.length == 0){
+                document.write('QUEUE IS EMPTY')
+            }
+            else{
+                document.write('QUEUE IS NOT EMPTY')
+            }
+           document.write('<br>')
+       }
+       else if(choice == 5){
+            document.write('<br>')
+            if(queue.length == num){
+                document.write('QUEUE IS FULL')
+            }
+            else{
+                document.write('QUEUE IS NOT FULL')
+            }
+           document.write('<br>')
+       }
+       else if(choice == 6){
+           document.write('<br>')
+           document.write('ALL QUEUE ELEMENTS ARE:')
+           document.write(queue)
+       }
+       else{
+           alert('INVALID CHOICE')
+       }
+
+   </script>
+</body>
+</html>

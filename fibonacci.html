@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="magic.css">
+   
+</head>
+<body>
+    <script>
+       const  num = parseInt(prompt("ENTER NUMBER OF FIBONACCI SEQUENCE ELEMENTS YOU WANT TO BE SHOWN"));
+       let n = 0;
+       let ans = 1;
+       let nextTerm;
+       document.write('THE FIRST '+num+' FIBONACCI SERIES TERMS ARE: ')
+       document.write('<br>')
+       document.write('<br>')
+       document.write('FIRST NUMBER: '+ans)
+       document.write('<br>')
+       document.write('<br>')
+
+       for(let i = 1; i<num;i++){
+            nextTerm = n + ans
+            n = ans
+            ans = nextTerm
+            document.write('NEXT NUMBER: '+ans)
+            document.write('<br>')
+            document.write('<br>')
+            
+       }
+    </script>
+</body>
+</html>
